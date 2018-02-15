@@ -5,8 +5,8 @@ import './App.css';
 class EventLink extends Component{
 
   render(){
-    return this.props.events.map(event=><p>{event.name}</p>)
+    return <a href="http://google.com">{`${this.props.event.name}`}<br/></a>
   }
 }
 
-export default EventMenu
+export default EventLink

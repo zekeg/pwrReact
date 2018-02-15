@@ -5,10 +5,8 @@ import EventLink from './EventLink'
 class EventMenu extends Component{
 
   render(){
-    return <div className="EventMenu-wrapper">{this.props.events.map(event=>
-      <EventLink/>
-
-  </div>}
+    return this.props.events.map( event=> <EventLink key={event.date} event={event}/> )
+}
 }
 
 export default EventMenu
